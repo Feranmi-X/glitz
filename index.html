@@ -6,6 +6,23 @@
     <title>Document</title>
   </head>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @keyframes customBounce {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-30px);
+      }
+    }
+
+    .animate-custom-bounce {
+      animation: customBounce 1s ease-in-out infinite;
+    }
+  </style>
+
   <body class="md:mx-10 my-2 mx-3 p-2 bg-black text-white font-serif">
     <div class="flex justify-between">
       <div>
@@ -59,7 +76,11 @@
         </button>
       </div>
       <div>
-        <img src="/image/home 1.png" class="md:w-[350px] w-[300px]" alt="" />
+        <img
+          src="/image/home 1.png"
+          class="md:w-[350px] animate-custom-bounce w-[300px]"
+          alt=""
+        />
       </div>
     </div>
 
@@ -139,8 +160,12 @@
     </div>
 
     <div class="md:flex md:pl-8 md:h-[400px] md:gap-6 mt-6">
-      <div class="md:bg-amber-200 md:w-[370px]">
-        <img src="/image/story 1.png" class="md:w-[350px]" alt="" />
+      <div class="md:bg-amber-600 md:w-[370px]">
+        <img
+          src="/image/story 1.png"
+          class="md:w-[350px] animate-custom-bounce"
+          alt=""
+        />
       </div>
 
       <div class="md:mt-32 p-5 mt-5">
@@ -309,7 +334,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-amber-200 w-[300px] mt-10 pt-10 h-[290px]">
+      <div class="bg-amber-600 w-[300px] mt-10 pt-10 h-[290px]">
         <img
           src="/image/WhatsApp Image 2025-12-25 at 4.20.26 PM.jpeg"
           class="w-[270px] h-[300px]"
@@ -378,5 +403,37 @@
         <button class="bg-black p-2 text-sm px-3 -ml-1">SUBSCRIBE</button>
       </div>
     </div>
+
+    <div class="flex gap-5 md:gap-20 p-5 justify-center">
+      <div class="w-[200px] md:w-[300px]">
+        <h1 class="mb-2 font-bold md:text-3xl">Our information</h1>
+        <p class="mb-3 text-gray-400 text-sm">
+          36 Old Aba Road, Beside Love FM, Artillery, Port Harcourt, Rivers,
+          Nigeria.
+        </p>
+        <p class="text-gray-400 text-sm">+2349034776043</p>
+      </div>
+
+      <div>
+        <h1 class="mb-2 font-bold md:text-3xl">About Us</h1>
+        <p class="mb-2 text-gray-400 text-sm">support Center</p>
+        <p class="mb-2 text-gray-400 text-sm">Customer Support</p>
+        <p class="mb-2 text-gray-400 text-sm">About Us</p>
+        <p class="text-gray-400 text-sm">Copy right</p>
+      </div>
+
+      <div>
+        <h1 class="mb-2 font-bold md:text-3xl">Social</h1>
+        <div class="flex gap-2">
+          <img src="/image/Vectorj.png" alt="" />
+          <img src="/image/Vector (2).png" alt="" />
+          <img src="/image/Vector (1).png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-amber-600 text-center">
+      &copy; 2025 Glitz empire. All rights reserved.
+    </footer>
   </body>
 </html>
