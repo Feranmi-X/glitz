@@ -35,43 +35,47 @@
           </h1>
           <div class="flex justify-center md:-ml-8 ml-14">
             <h1>Already have an account?</h1>
-            <p><a href="/signin.html">Login</a></p>
+            <p class="text-blue-500 ml-2 italic">
+              <a href="/signin.html">Login</a>
+            </p>
           </div>
         </div>
         <div class="mt-2 p-7 pr-5 mr-5">
           <div class="flex gap-3">
             <input
               type="text"
-              class="md:w-[300px] w-[180px] p-5 rounded md:h-[48px]"
+              class="md:w-[300px] w-[180px] text-black p-5 rounded md:h-[48px]"
               placeholder="Name"
             />
             <input
               type="text"
-              class="md:w-[300px] w-[180px] p-5 rounded md:h-[48px]"
+              class="md:w-[300px] w-[180px] text-black p-5 rounded md:h-[48px]"
               placeholder="Last name"
             />
           </div>
           <div class="flex flex-col mt-5">
             <input
               type="text"
-              class="mb-5 rounded p-3 md:h-[48px] md:w-[610px] h-[50px] w-[370px]"
+              class="mb-5 rounded p-3 md:h-[48px] text-black md:w-[610px] h-[50px] w-[370px]"
               placeholder="Email"
             />
             <input
               type="text"
-              class="mb-5 rounded p-3 w-[370px] md:w-[610px] md:h-[48px] h-[50px]"
+              class="mb-5 rounded p-3 w-[370px] text-black md:w-[610px] md:h-[48px] h-[50px]"
               placeholder="Enter your password"
             />
             <div class="flex gap-3">
               <input type="checkbox" />
               <div class="flex gap-2">
                 <h1>I agree to the</h1>
-                <span>Terms & Conditions</span>
+                <span class="text-blue-500 italic">Terms & Conditions</span>
               </div>
             </div>
 
             <div class="mt-3 -ml-1">
-              <button class="w-[380px] md:w-full py-2 rounded bg-amber-600">
+              <button
+                class="w-[380px] hover:text-amber-200 md:w-full py-2 rounded bg-amber-600"
+              >
                 Create account
               </button>
             </div>
@@ -82,10 +86,14 @@
           <div><h1>Or register with</h1></div>
         </div>
         <div class="md:gap-5">
-          <button class="border p-2 mr-5 mt-5 md:w-[150px] rounded">
+          <button
+            class="border p-2 hover:text-gray-800 mr-5 mt-5 md:w-[150px] rounded"
+          >
             Google
           </button>
-          <button class="border p-2 mr-5 mt-5 md:w-[150px] rounded">
+          <button
+            class="border hover:text-gray-800 p-2 mr-5 mt-5 md:w-[150px] rounded"
+          >
             Apple
           </button>
         </div>
