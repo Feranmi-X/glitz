@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes customBounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-30px);
+        }
+      }
+
+      .animate-custom-bounce {
+        animation: customBounce 1s ease-in-out infinite;
+      }
+    </style>
   </head>
   <body class="bg-black text-white font-serif mx-5 my-5">
     <div class="flex justify-between">
@@ -65,6 +80,27 @@
         />
       </div>
     </div>
+    <div class="bg-amber-600 flex pr-6 w-full md:justify-center justify-start">
+      <div class="p-2 md:p-6">
+        <h1 class="font-bold text-xs mb-4">Shipping</h1>
+        <p class="md:w-[200px] w-[100px] text-sm">
+          Where your cargo travels in comfort, class, and confidence.
+        </p>
+      </div>
+      <div class="p-2 md:p-6">
+        <h1 class="font-bold text-xs mb-4">Good Packging</h1>
+        <p class="md:w-[200px] w-[140px] text-sm">
+          Where premium packaging meets absolute protection.
+        </p>
+      </div>
+      <div class="p-2 md:p-6">
+        <h1 class="font-bold text-xs mb-4">High Quality</h1>
+        <p class="md:w-[200px] w-[100px] text-sm">
+          Crafted to the highest standard of excellence.
+        </p>
+      </div>
+    </div>
+
     <!-- STart -->
 
     <div
@@ -78,7 +114,7 @@
           class="animate-pulse"
           alt=""
         />
-        <h1 class="font-medium md:mt-10 mt-24">T-SHIRT</h1>
+        <h1 class="font-mWhere youedium md:mt-10 mt-24">T-SHIRT</h1>
         <p class="text-gray-400">$200</p>
         <div>
           <span>
