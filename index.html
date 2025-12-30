@@ -35,6 +35,38 @@
     .animate-custom-bounce {
       animation: customBounce 1s ease-in-out infinite;
     }
+    @keyframes fade {
+      0%,
+      100% {
+        opacity: 0;
+      }
+      10%,
+      30% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade {
+      0%,
+      100% {
+        opacity: 0;
+      }
+      10%,
+      30% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes dot {
+      0%,
+      100% {
+        background: #d1d5db;
+      }
+      10%,
+      30% {
+        background: #f59e0b;
+      }
+    }
   </style>
 
   <body class="md:mx-10 my-2 mx-3 p-2 bg-black text-white font-serif">
@@ -239,7 +271,7 @@
         />
       </div>
 
-      <div class="md:mt-32 p-5 gap-3 mt-5">
+      <div class="md:mt-32 p-5 gap-3 animate-fade-up mt-5">
         <h1 class="mb-5 text-center text-2xl text-amber-600">OUR STORY</h1>
         <p class="mb-4 md:w-[400px]">
           At Glitz Empire, we believe that true luxury is not just about
@@ -428,43 +460,129 @@
     </div>
     <!--  STOP -->
 
-    <div class="p-5 gap-4 md:flex justify-center gap-5 mt-6">
+   <div class="relative max-w-5xl mx-auto mt-10">
+
+  <!-- SLIDER -->
+  <div class="relative h-[380px] overflow-hidden">
+
+    <!-- Testimonial 1 -->
+    <div
+      class="absolute inset-0 p-5 md:flex justify-center gap-5
+             opacity-0 animate-[fade_12s_infinite]"
+      style="animation-delay:0s"
+    >
       <div class="mt-5">
-        <img
-          src="/image/bxs-quote-alt-left.svg.png"
-          class="bg-white mb-3"
-          alt=""
-        />
+        <img src="/image/bxs-quote-alt-left.svg.png" class="mb-3" />
+
         <h1 class="text-gray-500 md:w-[400px] mb-5">
-          Glitz Empire has been an amazing experience for me. From the quality
-          to the professionalism, everything reflects excellence and class. The
-          brand doesn’t just deliver products it delivers confidence, trust, and
-          satisfaction. Glitz Empire truly stands out, and I’m proud to be
-          associated with a brand that values growth, style, and integrity.
+          Glitz Empire delivers quality, class, and professionalism in every
+          detail. Truly outstanding.
         </h1>
-        <p class="text-sm text-gray-400">march, 27, 2024</p>
+
+        <p class="text-sm text-gray-400">March 27, 2024</p>
+
         <div class="flex gap-2 mt-10 ml-4">
           <img
             src="/image/WhatsApp Image 2025-12-25 at 3.53.40 PM.jpeg"
-            class="w-[50px] rounded-3xl"
-            alt=""
+            class="w-[50px] rounded-full"
           />
-          <div class="">
-            <h1 class="font-bold mb-2">Wisdom Solomon</h1>
+          <div>
+            <h1 class="font-bold">Wisdom Solomon</h1>
             <p class="text-sm text-gray-500">Reliable Customer</p>
           </div>
         </div>
       </div>
+
       <div class="bg-amber-600 w-[300px] mt-10 pt-10 h-[290px]">
         <img
           src="/image/WhatsApp Image 2025-12-25 at 4.20.26 PM.jpeg"
           class="w-[270px] h-[300px]"
-          alt=""
         />
       </div>
     </div>
 
-    <div>
+    <!-- Testimonial 2 -->
+    <div
+      class="absolute inset-0 p-5 md:flex justify-center gap-5
+             opacity-0 animate-[fade_12s_infinite]"
+      style="animation-delay:6s"
+    >
+      <div class="mt-5">
+        <img src="/image/bxs-quote-alt-left.svg.png" class="mb-3" />
+
+        <h1 class="text-gray-500 md:w-[400px] mb-5">
+          Premium products with excellent customer service. Every purchase
+          feels intentional and well crafted.
+        </h1>
+
+        <p class="text-sm text-gray-400">April 12, 2025</p>
+
+        <div class="flex gap-2 mt-10 ml-4">
+          <img
+            src="/image/WhatsApp Image 2025-12-30 at 3.34.55 PM00.jpeg"
+            class="w-[50px] rounded-full"
+          />
+          <div>
+            <h1 class="font-bold">Iwari Solomon</h1>
+            <p class="text-sm text-gray-500">Verified Buyer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-amber-600 w-[300px] mt-10 pt-10 h-[290px]">
+        <img
+          src="/image/WhatsApp Image 2025-12-30 at 3.34.35 PM34.jpeg"
+          class="w-[270px]  h-[300px]"
+        />
+      </div>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div
+      class="absolute inset-0 p-5 md:flex justify-center gap-5
+             opacity-0 animate-[fade_12s_infinite]"
+      style="animation-delay:9s"
+    >
+      <div class="mt-5">
+        <img src="/image/bxs-quote-alt-left.svg.png" class="mb-3" />
+
+        <h1 class="text-gray-500 md:w-[400px] mb-5">
+          Glitz Empire blends style with reliability. A brand you can truly
+          trust for quality and consistency.
+        </h1>
+
+        <p class="text-sm text-gray-400">May 3, 2024</p>
+
+        <div class="flex gap-2 mt-10 ml-4">
+          <img
+            src="/image/WhatsApp Image 2025-12-30 at 3.16.39 PMiiii.jpeg"
+            class="w-[50px] rounded-full"
+          />
+          <div>
+            <h1 class="font-bold">Feranmi Solomon</h1>
+            <p class="text-sm text-gray-500">Happy Client</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-amber-600 w-[300px] mt-10 pt-10 h-[290px]">
+        <img
+          src="/image/WhatsApp Image 2025-12-30 at 3.16.39 PMiiii.jpeg"
+          class="w-[270px] h-[300px]"
+        />
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DOTS -->
+  <div class="flex justify-center gap-2 mt-4">
+    <span class="w-2 h-2 rounded-full bg-gray-300 animate-[dot_12s_infinite]"></span>
+    <span class="w-2 h-2 rounded-full bg-gray-300 animate-[dot_12s_infinite] [animation-delay:4s]"></span>
+    <span class="w-2 h-2 rounded-full bg-gray-300 animate-[dot_12s_infinite] [animation-delay:8s]"></span>
+  </div>
+
+</div>
       <h1 class="my-5 text-center text-2xl text-amber-600 mt-14">
         NEW ARRIVALS
       </h1>
@@ -474,28 +592,28 @@
       class="mt-10 text-white grid grid-cols-2 md:flex md:gap-5 justify-center mt-6 gap-2"
     >
       <div
-        class="bg-neutral-950 text-center hover:bg-amber-600 rounded w-[200px] p-6"
+        class="bg-neutral-950 text-center shadow-md transition-transform duration-300ease-in-out hover:translate-y-2 hover:bg-amber-600 rounded w-[200px] p-6"
       >
         <img src="/image/new1.png" alt="" />
         <p class="mt-5 mb-3">LONGINES ROSE</p>
         <h1 class="text-gray-500">$600</h1>
       </div>
       <div
-        class="bg-neutral-950 text-center hover:bg-amber-600 rounded w-[200px] p-6"
+        class="bg-neutral-950 text-center shadow-md transition-transform duration-300ease-in-out hover:translate-y-2 hover:bg-amber-600 rounded w-[200px] p-6"
       >
         <img src="/image/new2.png" alt="" />
         <p class="mt-5 mb-3">JAZZMASTER</p>
         <h1 class="text-gray-500">$700</h1>
       </div>
       <div
-        class="bg-neutral-950 text-center hover:bg-amber-600 rounded w-[200px] p-6"
+        class="bg-neutral-950 text-center shadow-md transition-transform duration-300ease-in-out hover:translate-y-2 hover:bg-amber-600 rounded w-[200px] p-6"
       >
         <img src="/image/new3.png" alt="" />
         <p class="mt-5 mb-3">DREYUSS GOLD</p>
         <h1 class="text-gray-500">$750</h1>
       </div>
       <div
-        class="bg-neutral-950 text-center hover:bg-amber-600 rounded w-[200px] p-6"
+        class="bg-neutral-950 text-center shadow-md transition-transform duration-300ease-in-out hover:translate-y-2 hover:bg-amber-600 rounded w-[200px] p-6"
       >
         <img src="/image/new4.png" alt="" />
         <p class="mt-5 mb-3">PORTUGUESE ROSE</p>
