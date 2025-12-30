@@ -22,6 +22,19 @@
     .animate-fade-up {
       animation: fadeUp 1.09s ease-out forwards;
     }
+    @keyframes customBounce {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-30px);
+      }
+    }
+
+    .animate-custom-bounce {
+      animation: customBounce 1s ease-in-out infinite;
+    }
   </style>
 
   <body class="md:mx-10 my-2 mx-3 p-2 bg-black text-white font-serif">
@@ -54,18 +67,36 @@
     </div>
 
     <div class="mt-5 md:flex p-5 md:gap-40 animate-fade-up">
-      <div class="md:mt-36">
-        <h1 class="md:text-3xl text-2xl font-bold text-amber-600 mb-2">
-          GLITZ EMPIRE
+      <div class="md:mt-36 group">
+        <!-- Add group here to handle hover for children -->
+        <!-- Heading -->
+        <h1 class="md:text-3xl text-2xl font-bold text-amber-600 mb-2 relative">
+          <span class="block group-hover:hidden">GLITZ EMPIRE</span>
+          <span class="hidden group-hover:block text-amber-600"
+            >ABOUT GLITZ EMPIRE</span
+          >
         </h1>
 
-        <p class="mb-4 md:w-[400px]">
-          Glitz Empire stands out as a brand that blends elegance, confidence,
-          and excellence effortlessly. It represents style with purpose where
-          quality meets class and leaves a lasting impression of sophistication
-          and ambition.
+        <!-- Paragraph -->
+        <p class="mb-4 md:w-[400px] relative">
+          <span class="block group-hover:hidden">
+            Glitz Empire stands out as a brand that blends elegance, confidence,
+            and excellence effortlessly. It represents style with purpose where
+            quality meets class and leaves a lasting impression of
+            sophistication and ambition.
+          </span>
+          <span class="hidden group-hover:block text-white">
+            Glitz Empire is a brand that embodies elegance, ambition, and
+            confidence. With a keen eye for style and a commitment to
+            excellence, it seamlessly blends sophistication with purpose. Every
+            piece reflects quality, class, and attention to detail, leaving a
+            lasting impression of refinement and prestige. Glitz Empire isn’t
+            just a brand—it’s a statement of boldness, aspiration, and timeless
+            style for those who value both luxury and authenticity.
+          </span>
         </p>
 
+        <!-- Buttons -->
         <button
           class="bg-amber-600 p-2 rounded hover:bg-amber-200 mr-1 md:mr-2"
         >
@@ -76,6 +107,8 @@
           ADD TO CART
         </button>
       </div>
+
+      <!-- Image -->
       <div>
         <img
           src="/image/home 1.png"
@@ -147,19 +180,19 @@
           </div>
         </div>
       </div>
-
-      <div class="relative w-64 group overflow-hidden rounded-xl">
+      <div class="relative w-64 group mb-5 overflow-hidden rounded-xl">
         <!-- Image -->
         <img
           src="/image/WhatsApp Image 2025-12-25 at 12.53.29 PM (1).jpeg"
           class="w-full h-full object-cover"
+          alt=""
         />
 
         <!-- Text overlay -->
         <div
           class="absolute inset-0 items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
-          <h1 class="text-amber-600 text-center font-medium mt-20 md:mt-40">
+          <h1 class="text-amber-600 text-center font-medium mt-40">
             PATEK PHILIPPE
           </h1>
           <p class="text-gray-400 text-center">$190</p>
@@ -179,7 +212,7 @@
       </div>
     </div>
 
-    <div class="md:flex md:pl-8 md:h-[400px] md:gap-6 mt-6">
+    <div class="md:flex md:pl-8 md:h-[400px] md:gap-6 mt-6 md:mb-10">
       <div class="md:bg-amber-600 md:w-[370px]">
         <img
           src="/image/story 1.png"
@@ -208,7 +241,9 @@
     </div>
 
     <div>
-      <h1 class="my-5 text-center text-2xl text-amber-600">PRODUCTS</h1>
+      <h1 class="my-5 text-center text-2xl text-amber-600 md:mt-10">
+        PRODUCTS
+      </h1>
     </div>
 
     <div
