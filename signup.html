@@ -54,7 +54,7 @@
               placeholder="Last name"
             />
           </div>
-          <div class="flex flex-col mt-5">
+          <div class="flex flex-col relative mt-5">
             <input
               type="text"
               class="mb-5 rounded p-3 md:h-[48px] text-black md:w-[610px] h-[50px] w-[370px]"
@@ -62,9 +62,25 @@
             />
             <input
               type="password"
-              class="mb-5 rounded p-3 w-[370px] text-black md:w-[610px] md:h-[48px] h-[50px]"
-              placeholder="Enter your password"
+              placeholder="Password"
+              class="peer-checked:hidden w-[370px] mb-5 text-black md:w-[610px] md:h-[48px] h-[50px] rounded px-4 py-2 pr-12"
             />
+
+            <!-- Text input (shown when checked) -->
+            <input
+              type="text"
+              placeholder="Password"
+              class="hidden peer-checked:block w-full border rounded-lg px-4 py-2 pr-12 absolute inset-0"
+            />
+
+            <!-- Eye icon -->
+            <label
+              for="toggle"
+              class="absolute inset-y-0 right-3 md:mb-5 mb-7 flex items-center cursor-pointer text-gray-500"
+            >
+              👁
+            </label>
+
             <div class="flex gap-3">
               <input type="checkbox" />
               <div class="flex gap-2">
